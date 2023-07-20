@@ -1,6 +1,16 @@
-# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Emoji Browser
+Emoji Browser is a simple web application that allows users to browse and filter emojis from a given API.
+
+Install the project dependencies using npm:
+npm install
+
+Usage
+On the homepage, you will see a list of emojis fetched from the EmojiHub API.
+Use the category selector to filter emojis based on different categories.
+Click on the pagination buttons to browse through different pages of emojis.
 
 ## Available Scripts
 

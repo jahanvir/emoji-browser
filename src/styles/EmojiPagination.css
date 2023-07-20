@@ -1,0 +1,45 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .page-btn {
+    cursor: pointer;
+    border: none;
+    background-color: #f7c039;
+    color: #fff;
+    padding: 8px 16px;
+    margin: 0 4px;
+    border-radius: 8px;/* Rounded corners for the buttons */
+    font-size: 14px;
+    transition: background-color 0.2s;
+  }
+  
+  .page-btn:hover {
+    background-color: #555;
+    color: #fff;
+  }
+  
+
+  /* Adjust styles for smaller screens */
+  @media (max-width: 600px) {
+    .pagination {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .page-btn {
+      margin: 5px;
+      flex-basis: calc(33.33% - 20px); /* Adjust this value to control the spacing */
+      max-width: calc(33.33% - 20px); /* Adjust this value to control the spacing */
+    }
+  
+    /* Adjust size for the "Start" and "End" buttons */
+    .page-btn.start-end-btn {
+      flex-basis: 20%;
+      max-width: 20%;
+      font-size: 12px;
+    }
+  }

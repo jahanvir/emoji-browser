@@ -1,0 +1,134 @@
+
+
+.header {
+  background-color: #f7c039;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+.footer {
+  background-color: #f7c039;
+  padding: 10px 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+ .emoji-browser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.emoji-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.emoji-list {
+  flex: 1;
+  max-width: 400px;
+  margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-gap: 30px;
+}
+
+.category-selector-container {
+  width: 200px; /* Adjust the width of the category selector container as needed */
+  margin: 30px; /* Add some space between the emoji list and the category selector */
+}
+
+
+
+.filter {
+  margin-bottom: 20px; /* Add space at the bottom of the filter section */
+}
+
+
+.emoji-card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 30px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  gap: 30px;
+
+}
+
+.emoji-card:hover {
+  transform: translateY(-4px);
+}
+
+.emoji-card .emoji {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 3rem; /* Adjust the font size to make emojis bigger */
+  margin-right: 20px; /* Add some spacing between the emoji and text */
+}
+
+.emoji-card .emoji-details {
+  flex: 1; /* Fill the available space for the text */
+}
+
+.emoji-card .emoji-name {
+  font-weight: bold;
+}
+
+.emoji-card .emoji-category {
+  color: #777;
+}
+
+.emoji-card .emoji-group {
+  color: #777;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Add space between grid and pagination */
+}
+
+.pagination button {
+  margin: 0 5px; /* Add space between page buttons */
+}
+
+  
+  /* Responsive Styles */
+  
+  /* For mobile devices (up to 767px) */
+  @media screen and (max-width: 767px) {
+    .emoji-list {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+  }
+  
+  /* For tablets (768px to 1023px) */
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .emoji-list {
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    }
+  }
+  
+  /* For larger desktop screens (1024px and above) */
+  @media screen and (min-width: 1024px) {
+    .emoji-list {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+  }
+
